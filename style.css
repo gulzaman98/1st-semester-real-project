@@ -35,3 +35,158 @@
 .nav-item:hover::after {
     width: 100%;
 }
+
+
+
+/* start */
+
+body {
+    background: #fff;
+}
+
+
+/* HERO SECTION */
+
+.col img{
+    
+    width: 70%;
+    height: auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 24px;
+    background: #f0f8ff;
+
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: #555;
+}
+
+.btn-primary {
+    background: #4a90e2;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background: #357abd;
+}
+
+/* FEATURED SECTION */
+.featured {
+    padding: 40px 24px;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card p {
+    margin: 12px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* end */
+
+
+.btn-primaryy {
+    background: #4a90e2;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 40%;
+    border-color:#4a90e2;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    padding: 40px 24px;
+    background:wheat;
+}
+
+.col1 {
+    text-align: center;
+    width: 350px;
+    height: auto;
+}
+
+.col2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 400px;
+}
+
+
+/* .benefits {
+    margin-top: 30px;
+    padding: 40px 24px;
+    background:wheat;
+    text-align: center; 
+}
+
+.grid2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card1 {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card1 img {
+    width: 100%;
+    height: auto;
+}
+
+.card2 {
+    margin-left: 700px;
+    font-size: 16px;
+    font-weight: 500;
+} */
