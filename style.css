@@ -1,3 +1,5 @@
+
+/* navbar start */
 .navbar-brand {
     position: relative;
 }
@@ -36,9 +38,8 @@
     width: 100%;
 }
 
+/* navbar end */
 
-
-/* start */
 
 body {
     background: #fff;
@@ -46,6 +47,10 @@ body {
 
 
 /* HERO SECTION */
+
+.container-fluid{
+    padding: 1px;
+}
 
 .col img{
     
@@ -76,6 +81,7 @@ body {
     color: white;
     padding: 12px 24px;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
 }
@@ -120,10 +126,10 @@ body {
     font-size: 16px;
     font-weight: 500;
 }
-/* end */
 
 
 .btn-primaryy {
+     border: none;
     background: #4a90e2;
     color: white;
     padding: 10px 30px;
@@ -157,36 +163,102 @@ body {
     max-width: 400px;
 }
 
-
-/* .benefits {
-    margin-top: 30px;
-    padding: 40px 24px;
-    background:wheat;
-    text-align: center; 
-}
-
-.grid2 {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card1 {
-    width: 250px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
+.fol-fav {
     text-align: center;
+    padding: 60px 24px;
+    /* background: #f0f8ff; */
+
 }
 
-.card1 img {
-    width: 100%;
-    height: auto;
+.fol-fav h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
 }
 
-.card2 {
-    margin-left: 700px;
+.fol-fav p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* join section  */
+.join {
+    margin-top: 50px;
+    text-align: center;
+    padding: 60px 24px;
+    background: #bcd2e5;
+
+}
+
+.join h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.join p {
+    font-size: 18px;
+    margin-bottom: 14px;
+    color: #555;
+}
+
+.join-btn {
+    background: #4a90e2;
+    color: white;
+    padding: 14px;
+    width: 250px;
+    margin-right: 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
     font-size: 16px;
-    font-weight: 500;
-} */
+}
+.join-btn:hover {
+    background: #357abd;
+}
+.input {
+    padding: 14px;
+    width: 450px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 40px;
+}
+
+/* join section end  */
+
+/* by-cat section start */
+.by-cat {
+    margin-top: 30px;
+    text-align: center;
+    padding: 60px 24px;
+    background: #d8e9f8;
+}
+
+.by-cat h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.by-cat p {
+    font-size: 18px;
+    color: #555;
+}
+/* by-cat section :end */
+
+/* curated-org section start */
+
+.curated-org {
+    text-align: center;
+    padding: 60px 24px;
+
+}
+
+.curated-org h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.curated-org p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* curated-org section end */
