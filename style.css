@@ -68,6 +68,7 @@ body {
 .hero h1 {
     font-size: 36px;
     margin-bottom: 12px;
+    /* margin-top: 10px; */
 }
 
 .hero p {
