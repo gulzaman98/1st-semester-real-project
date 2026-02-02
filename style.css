@@ -265,3 +265,118 @@ body {
 /* curated-org section end */
 
 
+/* Footer section start */
+.footer{
+    margin-top: 10px;
+    background: #b23a3a;
+    color: white;
+    padding: 60px 40px;
+}
+
+.footer-container{
+    display: flex;
+    gap: 40px;
+}
+
+.footer-col{
+    flex:1;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.footer p{
+    margin: 15px 0px;
+    line-height: 1.6;
+
+}
+
+.footer-links{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li{
+    margin-bottom: 8px;
+}
+
+.footer-links a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+/* Footer-center */
+
+.footer-col-center{
+    text-align: center;
+}
+
+.join-btn{
+    margin-top: 10px;
+    padding: 10px 25px;
+    border: none;
+    background: #fff;
+    color: #b23a3a;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.join-btn:hover{
+    background: #f1f1f1;
+}
+
+/* Explore links */
+.explore-links{
+    display: flex;
+    gap: 40px;
+}
+
+
+.explore-links ul{
+    list-style: none;
+    padding: 0;
+}
+
+.explore-links li{
+    margin-bottom: 8px;
+}
+ 
+.explore-links a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.explore-links a:hover{
+    text-decoration: underline;
+}
+
+
+/* Search box */
+
+.search-box{
+    margin-top: 15px;
+    display: flex;
+    gap: 5px;
+}
+
+.search-box input{
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.search-box button{
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

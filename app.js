@@ -28,6 +28,9 @@ $(document).ready(function(){
         e.preventDefault();
         loadpage("category")
     })
+    $(document).on("click" , "#exploreBtn" , function(){
+        loadpage("category")
+    })
 
     $("#gallery").click(function(e){
         e.preventDefault();
