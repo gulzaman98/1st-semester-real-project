@@ -102,6 +102,8 @@ body {
     margin-bottom: 24px;
 }
 
+/* featured4 */
+
 .grid {
     display: flex;
     gap: 20px;
@@ -127,6 +129,8 @@ body {
     font-size: 16px;
     font-weight: 500;
 }
+
+/* Featured 4 end */
 
 
 .btn-primaryy {
@@ -379,4 +383,80 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+}
+
+/* About Section  */
+
+.about-container{
+    background-color: #D8E9F8;
+    margin-top: 30px;
+    padding: 60px 24px;
+}
+
+.about-container h1{
+    text-align: center;
+    color: #212529;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-container h2{
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    
+}
+
+.about-container p{
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 10px auto;
+    color: #212529;
+}
+
+/* ABOUT SECTION END  */
+
+
+
+
+
+
+
+/* CATEGORY DROP DOWN START */
+
+.navbar .nav-item.dropdown{
+    position: relative;
+}
+
+.navbar .nav-item.dropdown .dropdown-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.navbar .nav-item.dropdown .dropdown-content a{
+    color:  #212529;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .nav-item.dropdown .dropdown-content a:hover {
+
+    background-color: #d8e9f8;
+}
+
+.navbar .nav-item.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.navbar .nav-item.dropdown .dropbtn:hover{
+    color: #4a90e2;
 }
