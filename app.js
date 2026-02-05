@@ -40,6 +40,23 @@ $(document).ready(function(){
         e.preventDefault();
         loadpage("feedback")
     })
+        $("#kids").click(function(e){
+        e.preventDefault();
+        loadpage("kids")
+    })
+        $("#elders").click(function(e){
+        e.preventDefault();
+        loadpage("elders")
+    })
+    $(document).on("click" , ".card" , function(){
+        let page = $(this).data("page")
+        if(page){
+            loadpage(page)
+        }
+    })
+    $(document).on("click" , "#backkids" , function(){
+        loadpage("kids")
+    })
     loadpage("home")
 })
 

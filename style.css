@@ -460,3 +460,52 @@ body {
 .navbar .nav-item.dropdown .dropbtn:hover{
     color: #4a90e2;
 }
+
+/* KIDS HTML PAGE ORIGAMI SECTION*/
+
+.kids-featured{
+    padding: 60px 24px;
+    background:  #f0f8ff;
+    text-align: center;
+    margin: 10px;
+}
+
+.kids-featured h2{
+    font-size: 34px;
+    margin-bottom: 40px;
+    color: #212529;
+}
+
+.kids-grid{
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.kids-grid .card{
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kids-grid .card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+}
+
+.kids-grid .card p{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600px;
+    color: #333;
+    margin: 0;
+}
+
+.kids-desc{
+    max-width: 850px;
+    margin: 0px auto 45px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}
