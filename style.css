@@ -606,3 +606,68 @@ body {
     background: #357abd;
     transform: translateY(-3px);
 }
+
+#backelders {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 12px 25px;
+    background: #4a90e2;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#backelders:hover {
+    background: #357abd;
+    transform: translateY(-3px);
+}
+
+/* Elders page start */
+.elders-featured {
+    padding: 60px 24px;
+    background: #f0f8ff;
+    text-align: center;
+    margin: 10px;
+}
+
+.elders-featured h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+    color: #212529;
+}
+
+.elders-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.elders-grid .card {
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elders-grid .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+}
+
+.elders-grid .card p {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600px;
+    color: #333;
+    margin: 0;
+}
+
+.elders-desc {
+    max-width: 850px;
+    margin: 0px auto 45px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}

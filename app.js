@@ -57,6 +57,9 @@ $(document).ready(function(){
     $(document).on("click" , "#backkids" , function(){
         loadpage("kids")
     })
+      $(document).on("click" , "#backelders" , function(){
+        loadpage("elders")
+    })
     loadpage("home")
 })
 
