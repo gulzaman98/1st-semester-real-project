@@ -273,7 +273,7 @@ body {
 
 /* Footer section start */
 .footer {
-    margin-top: 10px;
+    margin: 10px;
     background: #b23a3a;
     color: white;
     padding: 60px 40px;
@@ -670,4 +670,481 @@ body {
     font-size: 18px;
     line-height: 1.7;
     color: #555;
+}
+
+/* FEED BACK CONTAINER */
+
+.feedback-container{
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feedback-container h1{
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #212529;
+}
+
+.feedback-desc{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.feedback-form .form-group {
+    margin-bottom: 20px;
+    text-align: center;
+    text-align: left;
+}
+
+.feedback-form label{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.feedback-form input , 
+.feedback-form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.feedback-form input:hover ,
+.feedback-form textarea:hover{
+    border-color: #4a90e2;
+} 
+
+
+.feedback-btn{
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+}
+
+.feedback-btn:hover{
+    background: #357abd;
+}
+
+/* Feedback page end */
+
+/* contact page */
+
+.contact-container{
+    max-width: 1100px;
+    margin: 60px auto;
+    background: #f0f8ff;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.contact-container h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #212529;
+}
+
+.contact-desc{
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.contact-wrapper{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-info{
+    flex: 1;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow:  0 8px 20px rgba(0,0,0,0.1);
+}
+
+.contact-info{
+    margin-bottom: 15px;
+    color: #212529;
+}
+
+.contact-info p{
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-form{
+    flex: 1;
+    background:  #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.contact-form , .form-group{
+    margin-bottom: 20px;
+}
+
+.contact-form label{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-btn{
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-btn:hover{
+    background: #357abd;
+}
+
+
+
+
+
+
+
+
+/* Responsive Media Queries (Home Page) */
+
+@media (max-width: 768px) {
+
+    /* HERO SECTION */
+    .hero {
+        padding: 40px 16px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* IMAGE + TEXT COLUMN */
+    .col {
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 16px;
+    }
+
+    .col img {
+        width: 85%;
+    }
+
+    .col1,
+    .col2 {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* FEATURED CARDS */
+    .grid {
+        justify-content: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    /* CENTER BUTTON */
+    .btn-primaryy {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    /* JOIN SECTION */
+    .join h1 {
+        font-size: 28px;
+    }
+
+    .join p {
+        font-size: 16px;
+    }
+
+    .input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .join-btn {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .explore-links {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input,
+    .search-box button {
+        width: 100%;
+    }
+}
+
+
+/* About page  */
+
+@media (max-width: 992px) {
+
+    .about-container {
+        padding: 40px 16px;
+        margin-top: 20px;
+    }
+
+    .about-container h1 {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .about-container h2 {
+        font-size: 22px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .about-container p {
+        font-size: 16px;
+        line-height: 1.7;
+        padding: 0 10px;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Category page */
+
+
+@media (max-width: 992px) {
+
+    /* ---------- KIDS & ELDERS FEATURED ---------- */
+    .kids-featured,
+    .elders-featured {
+        padding: 40px 16px;
+        margin: 0;
+    }
+
+    .kids-featured h2,
+    .elders-featured h2 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .kids-desc,
+    .elders-desc {
+        font-size: 16px;
+        padding: 0 10px;
+        margin-bottom: 30px;
+    }
+
+    /* ---------- GRID ---------- */
+    .kids-grid,
+    .elders-grid {
+        gap: 20px;
+    }
+
+    .kids-grid .card,
+    .elders-grid .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .kids-grid .card p,
+    .elders-grid .card p {
+        font-size: 16px;
+    }
+
+    /* ---------- STEPS PAGE ---------- */
+    .steps-container {
+        margin: 30px 10px;
+        padding: 20px 15px;
+    }
+
+    .steps-container h2 {
+        font-size: 26px;
+    }
+
+    .steps-container h3 {
+        font-size: 20px;
+    }
+
+    .steps-container p {
+        font-size: 16px;
+    }
+
+    .steps-main-img {
+        max-height: 250px;
+    }
+
+    /* ---------- STEPS LIST ---------- */
+    .steps-list li {
+        font-size: 15px;
+        padding: 12px 15px;
+    }
+
+    .steps-list li::before {
+        position: static;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    /* ---------- BUTTONS ---------- */
+    #backkids,
+    #backelders {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+
+
+
+
+
+/* FEED BACK PAGE */
+
+
+@media (max-width: 992px) {
+
+    .feedback-container {
+        margin: 30px 15px;
+        padding: 25px 20px;
+        max-width: 100%;
+    }
+
+    .feedback-container h1 {
+        font-size: 26px;
+    }
+
+    .feedback-desc {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .feedback-form label {
+        font-size: 14px;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+
+    .feedback-btn {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+   /* CONTACT PAGE  */
+
+
+@media (max-width: 992px) {
+
+    .contact-container {
+        margin: 30px 15px;
+        padding: 25px 15px;
+        max-width: 100%;
+    }
+
+    .contact-container h1 {
+        font-size: 28px;
+    }
+
+    .contact-desc {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-info p,
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 15px;
+    }
+
+    .contact-btn {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+        margin-top: 10px;
+    }
 }
