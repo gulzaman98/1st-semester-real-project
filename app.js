@@ -1,63 +1,63 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-    function loadpage(page){
+    function loadpage(page) {
         $.ajax({
-            url : page + ".html",
-            success : function(data){
+            url: page + ".html",
+            success: function (data) {
                 $("#content").html(data)
             }
         })
     }
 
-    $("#home").click(function(e){
+    $("#home").click(function (e) {
         e.preventDefault();
         loadpage("home")
     })
 
-    $("#about").click(function(e){
+    $("#about").click(function (e) {
         e.preventDefault();
         loadpage("about")
     })
 
-    $("#contact").click(function(e){
+    $("#contact").click(function (e) {
         e.preventDefault();
         loadpage("contact")
     })
 
-    $("#category").click(function(e){
+    $("#category").click(function (e) {
         e.preventDefault();
         loadpage("category")
     })
-    $(document).on("click" , "#exploreBtn" , function(){
+    $(document).on("click", "#exploreBtn", function () {
         loadpage("category")
     })
 
-    $("#gallery").click(function(e){
+    $("#gallery").click(function (e) {
         e.preventDefault();
         loadpage("gallery")
     })
-    $("#feedback").click(function(e){
+    $("#feedback").click(function (e) {
         e.preventDefault();
         loadpage("feedback")
     })
-        $("#kids").click(function(e){
+    $("#kids").click(function (e) {
         e.preventDefault();
         loadpage("kids")
     })
-        $("#elders").click(function(e){
+    $("#elders").click(function (e) {
         e.preventDefault();
         loadpage("elders")
     })
-    $(document).on("click" , ".card" , function(){
+    $(document).on("click", ".card", function () {
         let page = $(this).data("page")
-        if(page){
+        if (page) {
             loadpage(page)
         }
     })
-    $(document).on("click" , "#backkids" , function(){
+    $(document).on("click", "#backkids", function () {
         loadpage("kids")
     })
-      $(document).on("click" , "#backelders" , function(){
+    $(document).on("click", "#backelders", function () {
         loadpage("elders")
     })
     loadpage("home")
