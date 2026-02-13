@@ -671,3 +671,65 @@ body {
     line-height: 1.7;
     color: #555;
 }
+
+
+
+
+
+/* gallery start  */
+
+
+/* CATEGORIES */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.cat-box {
+    padding: 12px 25px;
+    background-color: rgb(71, 65, 65);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+} 
+
+
+
+
+
+/* GALLERY GRID */
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap:25px;
+    padding:40px;
+}
+
+/* CARD DESIGN */
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    /* box-shadow:0 4px 10px rgba(0,0,0,0.15); */
+    text-align:center;
+    transition:0.3s;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card p{
+    padding:10px;
+    font-weight:bold;
+}
+
+/* Hover effect */
+.card:hover{
+    transform:translateY(-5px);
+}
