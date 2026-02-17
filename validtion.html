@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" name="" id="userName" class="form-control" placeholder="" aria-describedby="helpId">
+            <small></small>
+
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="text" name="" id="userEmail" class="form-control" placeholder="" aria-describedby="helpId">
+                <small></small>
+
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="text" name="" id="userPassword" class="form-control" placeholder=""
+                        aria-describedby="helpId">
+                    <small></small>
+
+                    <div class="form-group">
+                        <label for="">Confirm Password</label>
+                        <input type="text" name="" id="userConfirmPassword" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+                        <small></small>
+                    </div>
+                    <button class="btn btn-success" id="sub">Register</button>
+                </div>
+                <script src="jquery/jquery-3.7.1.js"></script>
+                <script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+                <script>
+                    $("#userName").keyup(function () {
+                        let uName = $(this).val();
+                        let uNameRE = /^[a-zA-z0-9]{3,}$/;
+                        if (!uNameRE.test(uName)) {
+                            $(this).css('border', '1px solid red');
+                            $(this).next().show('small').text("Allow only A-Z a-z and must contain at least 3 characters").css('color', 'red');
+                        }
+                        else {
+                            $(this).css('border', '1px solid green');
+                            $(this).next().hide('small');
+                        }
+
+
+                    })
+
+                    $("#userEmail").keyup(function () {
+                        let uEmail = $(this).val();
+                        let uEmailRE = /^[a-z0-9_]{3,}@gmail\.com$/;
+                        if (!uEmailRE.test(uEmail)) {
+                            $(this).css('border', '1px solid red');
+                            $(this).next().show('small').text("please enter correct email").css('color', 'red');
+                        }
+                        else {
+                            $(this).css('border', '1px solid green ');
+                            $(this).next().hide('small');
+                        }
+
+
+                    })
+
+                    $("#userPassword").keyup(function () {
+                        let uPassword = $(this).val();
+                        let uPasswordRE = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z\d]).{8,}$/;
+                        if (!uPasswordRE.test(uPassword)) {
+                            $(this).css('border', '1px solid red');
+                            $(this).next().show('small').text("At least one upper case one lowercase one digit and one special character").css('color', 'red');
+                        }
+                        else {
+                            $(this).css('border', '1px solid green ');
+                            $(this).next().hide('small');
+                        }
+                    })
+
+                    $("#userConfirmPassword").keyup(function () {
+                        let userConfirmPassword = $(this).val();
+                        let userPassword = $("#userPassword").val();
+                        if (userPassword != userConfirmPassword) {
+                            $(this).css("border", "1px solid red");
+                            $(this).next().show('small').text("confirm password not matched").css('color', 'red');
+
+                        }
+                        else {
+                            $(this).css('border', '1px solid green ');
+                            $(this).next().hide('small');
+                        }
+                    })
+
+
+                    // 
+                    function emptyFileds(inpId) {
+                        if ($(inpId).val() == "") {
+                            $(inpId).css('border', '1px solid red');
+                            $(inpId).next().show('small').text('please filled out this field').css('color', 'red');
+                        }
+                    }
+                    $("#sub").click(function () {
+                        let userName = $("#userName").val();
+                        let userEmail = $("#userEmail").val();
+                        let userPassword = $("#userPassword").val();
+                        let userConfirmPassword = $("#userConfirmPassword").val();
+                        let uNameRE = /^[a-zA-z0-9]{3,}$/;
+                        let uEmailRE = /^[a-z0-9_]{3,}@gmail\.com$/;
+                        let uPasswordRE = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z\d]).{8,}$/;
+                        let users = JSON.parse(localStorage.getItem('students')) || [];
+                        emptyFileds("#userName");
+                        emptyFileds("#userEmail");
+                        emptyFileds("#userPassword");
+                      emptyFileds("#userConfirmPassword");
+                        if (uNameRE.test(userName) && uEmailRE.test(userEmail) && uPasswordRE.test(userPassword)) {
+                            users.push({ 'name': userName, 'email': userEmail, 'password': userPassword });
+                            localStorage.setItem('students', JSON.stringify(users));
+                            alert('register successfully');
+                            $('input').val('');
+                            location.assign('validation.html');
+                        }
+                        else {
+                            // alert('invalid data');
+                        }
+
+                    })
+
+
+                </script>
+</body>
+
+</html>
